@@ -1,0 +1,15 @@
+{% from "macros/fields.tmpl" import render_input_field, render_submit %}
+{% extends "shared/layout.tmpl" %}
+
+{% block title %}Sčítání řeťezce{% endblock %}
+
+{% block content %}
+  <h3>Sčítání řeťezce</h3>
+  <div class="form-group">Napiš dvě slova a já je sečtu.</div>
+  <form method="POST" id='insert-form'>
+    {{ form.hidden_tag() }}
+    {{ render_input_field(form.vstup1) }}
+    {{ render_input_field(form.vstup2) }}
+    {{ render_submit() }}
+  </form>
+{% endblock %}

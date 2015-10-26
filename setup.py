@@ -38,9 +38,9 @@ dependencies = [
 ]
 
 setup(
-    name="flask-sonda",
+    name="flask-skeleton2",
     version="0.1",
-    url="https://github.com/petrgru/flask-sonda",
+    url="https://github.com/731mat/flask-skeleton2",
     packages=find_packages(),
     zip_safe=False,
     install_requires=dependencies
